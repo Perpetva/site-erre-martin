@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: Open Sans;
+    --cor1: #050423;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .cabecalho {
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+} */
+
+.nome_indices {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 150px;
+    gap: 600px;
+}
+
+.nome {
+    color: var(--cor1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.indices {
+    color: var(--cor1);
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 150px;
+    background-image: url("/img/erre_martin_luzcamera.png");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.cabecalho_nome {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    letter-spacing: 20px;
+    align-items: center;
+}
+
+.cabecalho_nome1 {
+    font-weight: bold;
+}
+
+.cabecalho_texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+.meio {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.meio_imagem {
+    width: 433px;
+    height: 637px;
+}
+
+.meio_meio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.meio_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meio_titulo {
+    font-size: 48px;
+}
+
+.meio_subtitulo {
+    font-size: 30px;
+}
+
+.meio_texto {
+    font-size: 18px;
+}
+
+.meio_video1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.meio_video {
+    width: 960px;
+
+}
+
+.meio_texto_texto {
+    font-size: 48px;
+}
+
+.ficha_tecnica {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+}
+
+.ficha_tecnica_titulo {
+    font-size: 35px;
+}
+
+.ficha_tecnica_texto {
+    font-size: 18px;
+}
+
+.ocupacao {
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.ocupacao_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ocupacao_foto {
+    width: 500px;
+}
+
+.ocupacao_texto_titulo {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.ocupacao_texto_texto {
+    font-size: 18px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    gap: 15px;
+}
+
+.rodape_texto {
+    font-size: 30px;
+    
+}
+
+.rodape_logos {
+    width: 700px;
+    height: 100px;
+    background-color: lightgray;
+}

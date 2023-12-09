@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&family=Roboto:wght@100;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: Open Sans;
+    --cor1: #050423;
+}
+
+body {
+    font-family: var(--fonte);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+}
+
+.nome_indices {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 150px;
+    gap: 600px;
+    font-weight: 200;
+}
+
+.nome {
+    color: var(--cor1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.indices {
+    color: var(--cor1);
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding-top: 100px;
+    font-family: var(--fonte);
+    font-weight: 200;
+    
+}
+
+.cabecalho_nome2 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 25px;
+}
+
+.cabecalho_nome1 {
+    font-size: 80px;
+    letter-spacing: 25px;
+}
+
+.cabecalho_texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+    margin-top: 50px;
+    gap: 10px;
+    letter-spacing: 25px;
+    font-weight: 200;
+}
+
+.titulo2 {
+    font-weight: bold;
+}
+
+.texto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.meio {
+    margin-left: 150px;
+    padding-right: 150px;
+}
+
+.meio1 {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.meio_imagem {
+    background-color: lightgray;
+    height: 500px;
+    width: 400px;
+}
+
+.meio_texto_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meio_texto_titulo1 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.meio_texto_titulo2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.meio_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.meio_texto_texto {
+    font-size: 18px;
+}
+
+.imagens_dos_personagens {
+    background-color: lightgray;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.redes {
+    text-decoration: underline;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 20px;
+    font-size: 23px;
+}
+
+.ficha_tecnica {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.ficha_tecnica_texto {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 200;
+}
+
+.logo {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_titulo {
+    font-size: 28px;
+}
+
+.logo_imagem {
+    background-color: lightgray;
+    padding-left: 100px;
+    width: 700px;
+    height: 100px;
+}
+
+.projeto_ciuni_texto {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-weight: 200;
+}
+
+.rodape {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: underline;
+}

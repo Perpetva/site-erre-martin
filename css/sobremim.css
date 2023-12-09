@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: Open Sans;
+    --cor1: #050423;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .cabecalho {
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+} */
+
+.nome_indices {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 150px;
+    gap: 600px;
+}
+
+.nome {
+    color: var(--cor1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.indices {
+    color: var(--cor1);
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 200px;
+    background-image: url("/img/erre_martin_sobremim.png");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.cabecalho_nome {
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
+
+.cabecalho_texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+.meio {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.meio1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.meio_titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meio_titulo_menu {
+    font-size: 48px;
+    letter-spacing: 10px;
+}
+
+.meio_titulo_submenu {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.meio_texto {
+    font-size: 18px;
+}
+
+.meio_rodape {
+    text-decoration: underline;
+    font-size: 18px;
+    color: var(--cor1);
+}
+
+.contato {
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+}
+
+.rodape_nome {
+    font-weight: bold;
+
+}
+
+.rodape2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}

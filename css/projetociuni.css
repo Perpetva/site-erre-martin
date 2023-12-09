@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: Open Sans;
+    --cor1: #050423;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .cabecalho {
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+} */
+
+.nome_indices {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 150px;
+    gap: 600px;
+}
+
+.nome {
+    color: var(--cor1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.indices {
+    color: var(--cor1);
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 200px;
+    background-image: url("/img/erre_martin_luzcamera.png");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.cabecalho_nome {
+    display: flex;
+    font-size: 80px;
+    letter-spacing: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.cabecalho_nome2 {
+    font-weight: bold;
+}
+
+.cabecalho_texto {
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.menu {
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu_titulo {
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.menu_texto {
+    font-size: 18px;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu2_titulo {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.menu2_texto {
+    font-size: 18px;
+}
+
+.menu2_retangulos{
+    display: flex;
+    gap: 80px;
+}
+
+.menu2_retangulo {
+    background-color: lightgray;
+    width: 300px;
+    height: 450px;
+}
