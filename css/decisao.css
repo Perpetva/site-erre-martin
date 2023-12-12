@@ -32,18 +32,23 @@ a {
 }
 
 .nome_indices {
-    display: flex;
-    align-items: center;
     padding-top: 30px;
-    padding-left: 150px;
-    gap: 600px;
-    font-weight: 200;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .nome {
     color: var(--cor1);
     font-size: 60px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 .indices {

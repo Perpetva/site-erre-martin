@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: Open Sans;
+    --cor1: #050423;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .cabecalho {
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+} */
+
+.nome_indices {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nome {
+    color: var(--cor1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.indices {
+    color: var(--cor1);
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 200px;
+    background-image: url("/img/erre_martin_sobremim.png");
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.cabecalho_nome {
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
+
+.cabecalho_texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+.meio {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.meio1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.meio_titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.meio_titulo_menu {
+    font-size: 48px;
+    letter-spacing: 10px;
+    color: #BF2C2C;
+}
+
+.meio_titulo_submenu {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.meio_texto {
+    font-size: 18px;
+}
+
+.meio_rodape {
+    text-decoration: underline;
+    font-size: 18px;
+    color: var(--cor1);
+}
+
+.rodape {
+    margin-top: 50px;
+    background-color: #050423;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rodape_contato {
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.rodape_textos {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 40px;
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000;
+    cursor: pointer; 
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;   
+}
+
+@media (max-width: 750px) {
+
+    .hamburguer {
+        display: block;
+    }
+
+    .indices {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #BF2C2C;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .indices {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+
+
+
+
+
+
+
+    
+
+    
+
+    .nome_indices {
+        padding: 0;
+        gap: 10px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .meio {
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .rodape_textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+
+    .rodape_textos_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho2 {
+        margin: 0;
+    }
+
+}

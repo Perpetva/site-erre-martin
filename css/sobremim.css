@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,36 +15,63 @@
 body {
     font-family: var(--fonte);
 }
-
+  
 a {
+    font-family: var(--fonte);
     text-decoration: none;
 }
 
-/* .cabecalho {
-    background-color: lightgray;
-    width: 100%;
-    height: 600px;
-} */
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-inline: 16px;
+}
 
-.nome_indices {
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-left: 150px;
-    gap: 600px;
 }
 
-.nome {
-    color: var(--cor1);
+.logo {
     font-size: 60px;
-    text-transform: uppercase;
+    color: #050423;
 }
 
-.indices {
-    color: var(--cor1);
-    font-size: 30px;
+.nav-list {
     display: flex;
-    gap: 15px;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 25px;
+    color: #000;
+    padding-block: 16px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000;
+    cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 .cabecalho2 {
@@ -53,24 +79,29 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 30px;
     padding-top: 200px;
-    background-image: url("/img/erre_martin_sobremim.png");
+    background-image: url("/img/erre_martins_perfil.jpeg");
+    background-position: 0px -350px;
     color: #fff;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 600px;
 }
 
 .cabecalho_nome {
     font-size: 80px;
-    font-weight: bolder;
     letter-spacing: 12px;
+}
+
+.cabecalho_nome_negrito {
+    font-weight: bold;
 }
 
 .cabecalho_texto {
     font-size: 20px;
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .meio {
@@ -92,11 +123,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    
 }
 
 .meio_titulo_menu {
     font-size: 48px;
     letter-spacing: 10px;
+    color: #BF2C2C;
 }
 
 .meio_titulo_submenu {
@@ -106,6 +139,7 @@ a {
 
 .meio_texto {
     font-size: 18px;
+    text-align: justify;
 }
 
 .meio_rodape {
@@ -114,29 +148,290 @@ a {
     color: var(--cor1);
 }
 
-.contato {
-    margin-top: 40px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-}
-
 .rodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 30px;
-}
-
-.rodape_nome {
-    font-weight: bold;
-
-}
-
-.rodape2 {
+    margin-top: 50px;
+    background-color: #050423;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    align-items: center;
+    gap: 20px;
+}
+
+.rodape_contato {
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.rodape_textos {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 40px;
+}
+
+.luz_camera {
+    color: #000;
+}
+
+@media (max-width: 1440px) {
+    .meio {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .cabecalho2{
+        background-position: 0px -150px;
+     }
+}
+
+@media (max-width: 1024px) {
+    /* ///////////////// BARRA DO MENU /////////////////////// */
+    .hamburger {
+        display: block;
+        z-index: 1;
+      }
+    
+      .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #6495ED;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+    
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    
+        pointer-events: none;
+      }
+    
+      .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+      }
+    
+      .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+      }
+    
+      .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+      }
+    
+      .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+      }
+    
+      /* Estilos ativos */
+    
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburger {
+        position: fixed;
+        top: 45px;
+        right: 16px;
+        border-top-color: transparent;
+      }
+    
+      .nav.active .hamburger::before {
+        transform: rotate(135deg);
+      }
+    
+      .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+  
+      /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+
+    .logo {
+        font-size: 40px;
+    }
+
+
+    .meio {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .cabecalho2{
+       background-position: 0px -40px;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    /* ///////////////// BARRA DO MENU /////////////////////// */
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #6495ED;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 45px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+    .meio {
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .rodape_textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+
+    .rodape_textos_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho2 {
+        margin: 0;
+        background-position: 0px -10px;
+    }
+
+    .cabecalho_nome {
+        font-size: 50px;
+    }
+
+    
+
+}
+
+
+@media (max-width: 480px) {
+    .cabecalho_nome {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .header {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .meio {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cabecalho2 {
+        height: 300px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        background-position: 0px -10px;
+    }
+
+    .cabecalho_texto {
+        font-size: 15px;
+    }
+
+    .rodape {
+        gap: 0px;
+    }
+
+    .rodape_contato {
+        margin: 0;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .rodape_textos {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .meio_texto {
+        font-size: 14px;
+    }
+
 }

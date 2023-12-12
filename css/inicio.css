@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100;300;500&display=swap');
 
 * {
     margin: 0;
@@ -13,43 +14,72 @@
 
 body {
     font-family: var(--fonte);
-    background-color: #250809;
-}
-
-.cabecalho {
-    margin: 30px 0px 0px 150px;
-    display: flex;
-    gap: 600px;
-    align-items: center;
 }
 
 a {
     text-decoration: none;
 }
 
-.nome {
-    color: var(--cor1);
-    font-size: 60px;
-    text-transform: uppercase;
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-inline: 16px;
 }
 
-.indices {
-    text-decoration: none;
-    text-align: center;
-    font-family: Open Sans;
-    font-size: 30px;
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
     display: flex;
-    gap: 15px;
-    color: var(--cor1);
+    justify-content: space-between;
+    align-items: center;
 }
 
-.imagem {
-    height: 1200px;
-    width: 100%;    
+.logo {
+    font-size: 60px;
+    color: #050423;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 25px;
+    color: #000;
+    padding-block: 16px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000;
+    cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 .imagem2 {
-    margin-top: 40px;
+    background-image: url(/img/OPULO\(ERREMARTIN2022\)1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1200px;
+    width: 100%; 
+     
 }
 
 .rodape {
@@ -58,11 +88,13 @@ a {
     align-items: center;
     gap: 20px;
     color: var(--cor1);
+    background-color: #0C1635;
 }
 
 .rodape_contato {
     font-size: 70px;
     margin-top: 40px;
+    
 }
 
 .segundo_rodape_nome {
@@ -77,3 +109,273 @@ a {
     gap: 5px;
     font-size: 15px;
 }
+
+@media (max-width: 1440px) {
+  .imagem2 {
+    height: 1000px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  /* ///////////////// BARRA DO MENU /////////////////////// */
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6495ED;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 45px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+  .imagem2 {
+    height: 700px;
+  }
+}
+
+
+@media (max-width: 768px) {
+      /* ///////////////// BARRA DO MENU /////////////////////// */
+      .hamburger {
+        display: block;
+        z-index: 1;
+      }
+    
+      .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #6495ED;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+    
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    
+        pointer-events: none;
+      }
+    
+      .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+      }
+    
+      .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+      }
+    
+      .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+      }
+    
+      .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+      }
+    
+      /* Estilos ativos */
+    
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburger {
+        position: fixed;
+        top: 45px;
+        right: 16px;
+        border-top-color: transparent;
+      }
+    
+      .nav.active .hamburger::before {
+        transform: rotate(135deg);
+      }
+    
+      .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+  
+      /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+      .logo {
+        font-size: 50px;
+      }
+
+      .imagem2 {
+        height: 500px;
+      }
+
+      .rodape_contato {
+        font-size: 40px;
+      }
+}
+
+@media (max-width: 480px) {
+  /* ///////////////// BARRA DO MENU /////////////////////// */
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6495ED;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 45px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+  .logo {
+    font-size: 30px;
+  }
+  
+  .imagem2 {
+    height: 300px;
+  }
+
+  .rodape_contato {
+    font-size: 30px;
+  }
+
+  .segundo_rodape {
+    font-size: 14px;
+  }
+
+  .segundo_rodape_nome {
+    font-size: 16px;
+  }
+
+  .header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rodape {
+    padding-bottom: 30vh;
+  }
+}
+
