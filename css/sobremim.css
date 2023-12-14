@@ -172,6 +172,8 @@ a {
 
 .luz_camera {
     color: #000;
+    font-size: 35px;
+    letter-spacing: 5px;
 }
 
 @media (max-width: 1440px) {
@@ -198,7 +200,7 @@ a {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: #6495ED;
+        background: #fff;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
     
@@ -287,7 +289,7 @@ a {
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: #6495ED;
+      background: #fff;
       clip-path: circle(100px at 90% -15%);
       transition: 1s ease-out;
   
