@@ -256,11 +256,298 @@ a {
     height: fit-content;
 }
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+    .meio {
+        margin: 15px;
+        gap: 50px;
+    }
 
-@media (max-width: 1024px) {}
+    .ocupacao {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-left: 10%;
+        
+    }
 
-@media (max-width: 768px) {}
+    .meio{
+        margin-left: 10%;
+        
+    }
+
+    .meio_imagem {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .video {
+        width: 90%;
+        height: 700px;
+    }
+
+    .ficha_tecnica {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .ocupacao_foto {
+        width: 350px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1024px) {
+     /* ///////////////// BARRA DO MENU /////////////////////// */
+     .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 45px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+    .meio {
+        margin: 15px;
+        gap: 50px;
+    }
+
+    .ocupacao {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 800px;
+        margin-left: 10%;
+        
+    }
+
+    .meio{
+        width: 800px;
+        margin-left: 10%;
+        
+    }
+
+    .meio_imagem {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .video {
+        width: 90%;
+        height: 500px;
+    }
+
+    .ficha_tecnica {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .ocupacao_foto {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .rodape_texto {
+        width: 700px;
+    }
+
+}
+
+@media (max-width: 768px) {
+     /* ///////////////// BARRA DO MENU /////////////////////// */
+     .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 45px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /* ///////////////// FIM DA BARRA DO MENU /////////////////////// */
+
+    .cabecalho2 {
+        margin-top: 0;
+        background-position: 0px 0px;
+        height: 500px;
+    }
+
+    .video {
+        width: 90%;
+        height: 400px;
+    }
+
+    .meio {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        width: auto;
+    }
+
+    .ocupacao {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        width: auto;
+    }
+
+    .rodape_texto {
+        width: 400px;
+    }
+
+    .cabecalho_nome {
+        font-size: 35px;
+        padding-left: 10px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .cabecalho2 {
+        text-align: center;
+        align-items: center;
+        height: 280px;
+        padding: 0;
+        justify-content: center;
+        margin-top: 0px;
+        background-size: 100%;       
+    }
+
+    .cabecalho_texto {
+        font-size: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .ficha_tecnica {
+        margin-left: 15px;
+        margin-right: 15px;
+    
+        
+    }
+}
 
 @media (max-width: 480px) {
     /* ///////////////// BARRA DO MENU /////////////////////// */

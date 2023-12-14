@@ -176,6 +176,12 @@ a {
     letter-spacing: 5px;
 }
 
+.link_inicio {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+  }
+
 @media (max-width: 1440px) {
     .meio {
         margin-left: 100px;
