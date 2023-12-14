@@ -183,7 +183,6 @@ a {
 }
 
 .redes {
-    text-decoration: underline;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -223,7 +222,6 @@ a {
 
 .logos_logos {
     width: 110px;
-    height: fit-content;
 }
 
 .projeto_ciuni_texto {
@@ -417,7 +415,7 @@ a {
       .logos_logos {
         margin-top: 30px;
         width: 60px;
-        height: fit-content;
+        
     }
 }
 
@@ -585,7 +583,7 @@ a {
       .logos_logos {
         margin-top: 30px;
         width: 60px;
-        height: fit-content;
+        
     }
 }
 
@@ -760,7 +758,7 @@ a {
       .logos_logos {
         margin-top: 30px;
         width: 60px;
-        height: fit-content;
+      
     }
      .rodape {
       font-size: 16px;
