@@ -253,7 +253,6 @@ a {
 
 .logos_logos {
     width: 110px;
-    height: fit-content;
 }
 
 @media (max-width: 1440px) {
@@ -656,6 +655,7 @@ a {
 
     .ficha_tecnica_texto {
         text-align: center;
+        font-size: 15px;
     }
 
     .ocupacao {
@@ -670,15 +670,19 @@ a {
 
     .meio_texto {
         text-align: justify;
+        font-size: 15px;
     }
 
     .ocupacao_foto {
         width: 350px;
     }
 
+    .ocupacao_texto_texto {
+        font-size: 15px;
+    }
+
     .logos_logos {
         width: 60px;
-        height: fit-content;
     }
 
     .rodape_texto {
@@ -715,4 +719,5 @@ a {
         margin-left: 15px;
         margin-right: 15px;
     }
+
 }

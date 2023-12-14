@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+.teste {
+    font-family: open sans hebrew condensed;
+}
+
 .header {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -143,9 +147,10 @@ a {
 }
 
 .meio_rodape {
+    text-decoration: none;
     text-decoration: underline;
     font-size: 18px;
-    color: var(--cor1);
+    color: #BF2C2C;
 }
 
 .rodape {
@@ -275,10 +280,9 @@ a {
         margin-right: 40px;
     }
 
-    .cabecalho2{
+    .cabecalho2 {
        background-position: 0px -40px;
     }
-    
 
 }
 
@@ -298,12 +302,10 @@ a {
       background: #fff;
       clip-path: circle(100px at 90% -15%);
       transition: 1s ease-out;
-  
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       gap: 0;
-  
       pointer-events: none;
     }
   
@@ -384,8 +386,6 @@ a {
         font-size: 50px;
     }
 
-    
-
 }
 
 
@@ -439,7 +439,7 @@ a {
     }
 
     .meio_texto {
-        font-size: 14px;
+        font-size: 15px;
     }
 
 }

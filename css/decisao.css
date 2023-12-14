@@ -189,6 +189,14 @@ a {
     justify-content: center;
     margin: 20px;
     font-size: 23px;
+
+}
+
+.redes1 {
+  text-decoration: none;
+  text-decoration: underline;
+  font-size: 18px;
+  color: #BF2C2C;
 }
 
 .ficha_tecnica {
@@ -230,10 +238,12 @@ a {
 .rodape {
     margin-top: 30px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-decoration: underline;
+    text-transform: uppercase; 
     margin-bottom: 80px;
+    text-decoration: none;
+    text-decoration: underline;
+    font-size: 18px;
+    color: #BF2C2C;
 }
 
 @media (max-width: 1440px) {
@@ -693,6 +703,10 @@ a {
         justify-content: center;
     }
 
+    .meio_texto_texto {
+      font-size: 15px;
+    }
+
     .meio_imagem {
         width: 100%;
     }
@@ -714,16 +728,19 @@ a {
       .texto {
         margin-left: 15px;
         margin-right: 15px;
+        font-size: 15px;
       }
 
       .ficha_tecnica_texto {
         margin-left: 15px;
         margin-right: 15px;
+        font-size: 15px;
       }
 
       .projeto_ciuni_texto {
         margin-left: 15px;
         margin-right: 15px;
+        font-size: 15px;
       }
 
       .rodape_texto {
@@ -745,5 +762,8 @@ a {
         width: 60px;
         height: fit-content;
     }
+     .rodape {
+      font-size: 16px;
+     }
 }
 

@@ -136,7 +136,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #6495ED;
+    background: #fff;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
 
@@ -213,7 +213,7 @@ a {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: #6495ED;
+        background: #fff;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
     
@@ -297,7 +297,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #6495ED;
+    background: #fff;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
 
