@@ -21,31 +21,57 @@ a {
     text-decoration: none;
 }
 
-/* .cabecalho {
-    background-color: lightgray;
-    width: 100%;
-    height: 600px;
-} */
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-inline: 16px;
+}
 
-.nome_indices {
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-left: 150px;
-    gap: 600px;
 }
 
-.nome {
-    color: var(--cor1);
+.logo {
     font-size: 60px;
-    text-transform: uppercase;
+    color: #050423;
 }
 
-.indices {
-    color: var(--cor1);
-    font-size: 30px;
+.nav-list {
     display: flex;
-    gap: 15px;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 25px;
+    color: #000;
+    padding-block: 16px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000;
+    cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 .cabecalho2 {
@@ -55,7 +81,7 @@ a {
     gap: 20px;
     margin-top: 30px;
     padding-top: 200px;
-    background-image: url("/img/erre_martin_luzcamera.png");
+    background-image: url("/img/projeto_ciuni.jpg");
     color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,4 +154,34 @@ a {
     background-color: lightgray;
     width: 300px;
     height: 450px;
+}
+
+.lebres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lebres_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lebres_titulo {
+    font-size: 35px;
+}
+
+.lebres_subtitulo {
+    font-weight: bold;
+}
+
+.lebres_textos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video {
+    text-align: center;
 }
